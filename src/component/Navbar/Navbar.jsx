@@ -8,9 +8,7 @@ const Navbar = () => {
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
-    <a href="javascript:void(0);" className="icon" onclick="myFunction()">
-      <i className="fa fa-bars"></i>
-    </a>
+   
   </div>
   )
 }

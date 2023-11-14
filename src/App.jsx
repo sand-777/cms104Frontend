@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes,Route,BrowserRouter } from 'react-router-dom'
+import { Routes,Route,BrowserRouter as Router } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import './App.css'
 
@@ -8,7 +8,7 @@ function App() {
 
   return (
 
-  <BrowserRouter>
+  <Router>
   <Routes>
 
     <Route path="/" element={<Home/>} />
@@ -16,7 +16,7 @@ function App() {
 
   </Routes>
   
-  </BrowserRouter>
+  </Router>
 
   )
 }
