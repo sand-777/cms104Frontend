@@ -37,9 +37,9 @@ alert("Something went wrong")
             return(
               
   <div key={blog._id} className="card-body">
-  <h5 key={blog.title} className="card-title">{blog.title}</h5>
-  <h5 key={blog.subTitle} className="card-title">{blog.subTitle}</h5>
-  <p key={blog.description} className="card-text">{blog.description}</p>
+  <h5 className="card-title">{blog.title}</h5>
+  <h5 className="card-title">{blog.subTitle}</h5>
+  <p className="card-text">{blog.description}</p>
   <a href="#" className="btn btn-primary">Go somewhere</a>
 </div>
             )
