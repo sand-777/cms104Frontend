@@ -17,7 +17,13 @@ const CreateBlog = () => {
     })
 
     const handleChange = (e)=>{
-        console.log(e.target.name,e.target.value)
+        const {name,value}= e.currentTarget
+
+        setData({
+            ...data,
+            [name] : value
+        })
+
 
     }
 
