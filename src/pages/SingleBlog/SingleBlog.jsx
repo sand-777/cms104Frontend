@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import Navbar from '../../component/Navbar/Navbar'
 
 const SingleBlog = () => {
@@ -18,6 +18,14 @@ const SingleBlog = () => {
         alert(response.data.message)
         navigate("/");
       }
+
+    }
+
+    //Update Blog
+
+    const updateBlog = async()=>{
+      const response = await axios.patch("http://localhost:2000/blogs/" + id)
+      req
 
     }
 
@@ -51,6 +59,7 @@ const SingleBlog = () => {
         <h2>{blog.subTitle}</h2>
         <p>{blog.description}</p>
         <button onClick={deleteBlog}>Delete</button>
+        <Link to={`/update/${blog._id}`}>Update</Link>
 
     </div>
   )
